@@ -1,0 +1,7 @@
+Other code editor: VSCode
+Install ohmyzsh at https://ohmyz.sh/
+Install zsh-autosuggestions at https://github.com/zsh-users/zsh-autosuggestions
+Install typewritten theme at https://typewritten.dev/#/
+
+Install tmux, iTerm2, vlc media
+
