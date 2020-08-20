@@ -8,8 +8,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
-    ~/.oh-my-zsh: ohmyzsh
-    ~/scripts: scripts
+    ~/personal_scripts: personal_scripts
     
 
 - create:
