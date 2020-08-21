@@ -28,7 +28,7 @@ export TYPEWRITTEN_COLOR="prompt:#fffc1"
 export TYPEWRITTEN_CURSOR="block"
 
 # source personal scripts
-source /Users/jeremynevado/scripts/my-scripts.sh 
+source /Users/jeremynevado/personal_scripts/my-scripts.sh 
 
 # Use vim style line editing in zsh
 bindkey -v
