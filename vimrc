@@ -73,3 +73,7 @@ nnoremap <Leader>s :SyntasticCheck<CR>
 nnoremap <Leader>r :SyntasticReset<CR>
 nnoremap <Leader>i :SyntasticInfo<CR>
 nnoremap <Leader>m :SyntasticToggleMode<CR>
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd  = 'CtrlP'
+
