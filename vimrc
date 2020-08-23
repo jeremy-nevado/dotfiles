@@ -77,3 +77,7 @@ nnoremap <Leader>m :SyntasticToggleMode<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd  = 'CtrlP'
 
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
