@@ -20,3 +20,6 @@
 [submodule "vim/pack/vendor/start/auto-pairs"]
 	path = vim/pack/vendor/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/pack/vendor/start/fzf"]
+	path = vim/pack/vendor/start/fzf
+	url = https://github.com/junegunn/fzf.git
