@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jeremynevado/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -8,7 +8,7 @@ export ZSH="/Users/jeremynevado/.oh-my-zsh"
 # Set list of themes to pick from when loading at random
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-plugins=(git osx z web-search zsh-autosuggestions)
+plugins=(git z web-search zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set typewritten ZSH as a prompt
+fpath+=$HOME/.zsh/typewritten
 autoload -U promptinit; promptinit
 prompt typewritten
 
@@ -28,7 +29,7 @@ export TYPEWRITTEN_COLOR="prompt:#fffc1"
 export TYPEWRITTEN_CURSOR="block"
 
 # source personal scripts
-source /Users/jeremynevado/scripts/my-scripts.sh 
+source ~/personal_scripts/my-scripts.sh 
 
 # Use vim style line editing in zsh
 bindkey -v
