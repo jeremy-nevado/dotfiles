@@ -47,3 +47,4 @@ bindkey '^H' backward-delete-char
 
 export EDITOR=vim
 
+source $HOME/.cargo/env 
