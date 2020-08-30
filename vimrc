@@ -4,6 +4,9 @@ filetype indent plugin on
 "Sytanx highlighting
 syntax on
 
+"Set a leader key
+:let mapleader = ","
+
 " open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
@@ -25,6 +28,7 @@ set showcmd
 set nomodeline
 set modelines=0
 " smart case-sensitive search
+
 set ignorecase
 set smartcase
 
@@ -85,12 +89,12 @@ let g:NERDTrimTrailingWhitespace = 1
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 
-"Set a leader key
-let mapleader = ","
-
 " Last line
 " set showmode
 " set showcmd
 
 " clear search
-map <leader><space> :let @/=;;<cr>
+map <Leader><space> :let @/=''<cr>
+
+" Visualize tabs and newlines
+set listchars=tab:▸\ ,eol:¬
