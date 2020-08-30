@@ -23,6 +23,7 @@ set nojoinspaces " suppress inserting two spaces between sentences
 set wildmenu
 set showcmd
 set nomodeline
+set modelines=0
 " smart case-sensitive search
 set ignorecase
 set smartcase
@@ -83,3 +84,13 @@ let g:ctrlp_cmd  = 'CtrlP'
 let g:NERDTrimTrailingWhitespace = 1
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
+
+"Set a leader key
+let mapleader = ","
+
+" Last line
+" set showmode
+" set showcmd
+
+" clear search
+map <leader><space> :let @/=;;<cr>
