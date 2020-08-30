@@ -44,8 +44,9 @@ set incsearch " incremental search (as string is being typed)
 
 nmap Q <Nop>
 
-nnoremap <Left>  :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
+"Left And Right Change Buffers
+nnoremap <Left>  :bp<CR>
+nnoremap <Right> :bn<CR>
 nnoremap <Up>    :echoe "Use k"<CR>
 nnoremap <Down>  :echoe "Use j"<CR>
 

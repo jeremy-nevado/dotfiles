@@ -32,3 +32,6 @@
 [submodule "vim/pack/vendor/start/vim-prettier"]
 	path = vim/pack/vendor/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule "vim/pack/vendor/start/rust.vim"]
+	path = vim/pack/vendor/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
