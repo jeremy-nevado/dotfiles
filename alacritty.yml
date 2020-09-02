@@ -162,7 +162,7 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+# colors:
   # Default colors
   #primary:
   #  background: '#1d1f21'
@@ -182,9 +182,9 @@ font:
   #
   # Allowed values are CellForeground and CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  # cursor:
+   # text: CellBackground
+   # cursor: CellForeground
 
   # Vi mode cursor colors
   #
@@ -706,6 +706,7 @@ colors:
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
+    custom_cursor_colors: true
     text: '0x1c2023'
     cursor: '0xc7ccd1'
 
