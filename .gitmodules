@@ -35,3 +35,6 @@
 [submodule "vim/pack/vendor/start/rust.vim"]
 	path = vim/pack/vendor/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/pack/vendor/start/--force"]
+	path = vim/pack/vendor/start/--force
+	url = https://github.com/vim-syntastic/syntastic.git
