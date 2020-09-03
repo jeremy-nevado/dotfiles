@@ -38,3 +38,9 @@
 [submodule "vim/pack/vendor/start/--force"]
 	path = vim/pack/vendor/start/--force
 	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "vim/pack/vendor/start/YouCompleteMe"]
+	path = vim/pack/vendor/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "vim/pack/vendor/start/ale"]
+	path = vim/pack/vendor/start/ale
+	url = https://github.com/dense-analysis/ale.git
