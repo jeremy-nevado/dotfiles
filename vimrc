@@ -66,20 +66,13 @@ nnoremap <Leader>f :NERDTreeFind<CR>
 " easymotion
 map <Space> <Plug>(easymotion-prefix)
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers=['pycodestyle']
-let g:syntastic_javascript_checkers=['eslint']
-nnoremap <Leader>s :SyntasticCheck<CR>
-nnoremap <Leader>r :SyntasticReset<CR>
-nnoremap <Leader>i :SyntasticInfo<CR>
-nnoremap <Leader>m :SyntasticToggleMode<CR>
+" Ale Settings
+let g:ale_enabled = 0
+let g:ale_exclude_highlights = '/./'
+nmap <silent> <Leader>s <Plug>(ale_next_wrap)
+nnoremap <Leader>r :ALELint
+nnoremap <Leader>i :ALEInfo<CR>
+nnoremap <Leader>m :ALEToggle
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd  = 'CtrlP'
