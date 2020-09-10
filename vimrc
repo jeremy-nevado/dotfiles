@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set nocompatible
 "Smart indentation based on file type
 filetype indent plugin on
