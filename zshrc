@@ -48,3 +48,19 @@ bindkey '^H' backward-delete-char
 export EDITOR=vim
 
 source $HOME/.cargo/env 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jeremy/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jeremy/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jeremy/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jeremy/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
