@@ -12,6 +12,9 @@ syntax on
 set splitbelow
 set splitright
 
+" set color column
+set colorcolumn=80
+
 " quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
