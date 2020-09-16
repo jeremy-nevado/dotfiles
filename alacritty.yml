@@ -27,7 +27,7 @@ font:
     persistent_logging: false
 draw_bold_text_with_bright_colors: true
 
-# Base16 Solarized Light 256 - alacritty color config
+#Base16 Solarized Light 256 - alacritty color config
 # Ethan Schoonover (modified by aramisgithub)
 colors:
   # Default colors

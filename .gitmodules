@@ -38,3 +38,30 @@
 [submodule "vim/pack/vendor/start/ale"]
 	path = vim/pack/vendor/start/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/bundle/ale"]
+	path = vim/bundle/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "vim/bundle/vim-easymotion"]
+	path = vim/bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "vim/bundle/auto-pairs"]
+	path = vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git
+[submodule "vim/bundle/rust.vim"]
+	path = vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/bundle/vim-prettier"]
+	path = vim/bundle/vim-prettier
+	url = https://github.com/prettier/vim-prettier.git
+[submodule "vim/bundle/vimtex"]
+	path = vim/bundle/vimtex
+	url = https://github.com/lervag/vimtex.git
