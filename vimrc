@@ -68,7 +68,6 @@ nnoremap <Leader>f :NERDTreeFind<CR>
 map <Space> <Plug>(easymotion-prefix)
 
 " Ale Settings
-let g:ale_enabled = 0
 let g:ale_exclude_highlights = '/./'
 nmap <silent> <Leader>s <Plug>(ale_next_wrap)
 nnoremap <Leader>r :ALELint
@@ -92,3 +91,6 @@ map <Leader><space> :let @/=''<cr>
 
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
+
+" Setting the tex flavor setting
+let g:tex_flavor = 'latex'
