@@ -65,3 +65,9 @@
 [submodule "vim/bundle/vimtex"]
 	path = vim/bundle/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "vim/bundle/vim-rainbow"]
+	path = vim/bundle/vim-rainbow
+	url = https://github.com/frazrepo/vim-rainbow.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git

@@ -3,12 +3,12 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="clean"
+ZSH_THEME="dieter"
 
 # Set list of themes to pick from when loading at random
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-plugins=(git z web-search zsh-autosuggestions)
+plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,14 +19,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set typewritten ZSH as a prompt
-fpath+=$HOME/.zsh/typewritten
-autoload -U promptinit; promptinit
-prompt typewritten
-
-export TYPEWRITTEN_COLOR="prompt:#fffc1"
-export TYPEWRITTEN_CURSOR="block"
 
 # source personal scripts
 source ~/personal_scripts/my-scripts.sh 
