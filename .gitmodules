@@ -65,3 +65,6 @@
 [submodule "vim/bundle/vimtex"]
 	path = vim/bundle/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "vim/bundle/vim-rainbow"]
+	path = vim/bundle/vim-rainbow
+	url = https://github.com/frazrepo/vim-rainbow.git

@@ -97,3 +97,4 @@ set listchars=tab:▸\ ,eol:¬
 
 " Setting the tex flavor setting
 let g:tex_flavor = 'latex'
+nnoremap <leader>c :VimtexCompile
