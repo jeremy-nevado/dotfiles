@@ -65,7 +65,7 @@ setlocal cindent
 setlocal cinkeys=0{,0},!^F,o,O,0[,0],0(,0)
 setlocal cinoptions=L0,(s,Ws,J1,j1,m1
 setlocal cinwords=for,if,else,while,loop,impl,mod,unsafe,trait,struct,enum,fn,extern,macro
-setlocal colorcolumn=
+setlocal colorcolumn=80
 setlocal comments=s0:/*!,ex:*/,s1:/*,mb:*,ex:*/,:///,://!,://
 setlocal commentstring=//%s
 setlocal complete=.,w,b,u,t,i
@@ -173,12 +173,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 14 - ((13 * winheight(0) + 29) / 59)
+let s:l = 10 - ((9 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-14
-normal! 013|
+10
+normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 nohlsearch
 doautoall SessionLoadPost

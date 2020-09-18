@@ -98,3 +98,6 @@ set listchars=tab:▸\ ,eol:¬
 " Setting the tex flavor setting
 let g:tex_flavor = 'latex'
 nnoremap <leader>c :VimtexCompile
+
+" Loading rainbow brackets
+let g:rainbow_active = 1
