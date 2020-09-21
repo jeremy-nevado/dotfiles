@@ -11,6 +11,7 @@
     ~/.zshrc: zshrc
     ~/personal_scripts: personal_scripts
     ~/.alacritty.yml: alacritty.yml
+    ~/.fish.config: fish.config
     
 
 - create:
