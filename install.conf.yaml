@@ -12,6 +12,7 @@
     ~/personal_scripts: personal_scripts
     ~/.alacritty.yml: alacritty.yml
     ~/.config/fish: fish
+    ~/.config/git: git
     
 
 - create:
