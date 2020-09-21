@@ -11,11 +11,10 @@
     ~/.zshrc: zshrc
     ~/personal_scripts: personal_scripts
     ~/.alacritty.yml: alacritty.yml
-    ~/.fish.config: fish.config
+    ~/.config/fish: fish
     
 
 - create:
-    - ~/downloads
     - ~/.vim/undo-history
 
 - shell:
