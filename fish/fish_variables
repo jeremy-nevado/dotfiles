@@ -1,7 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr_anaconda:source\x20\x7e/anaconda3/bin/activate
+SETUVAR _fish_abbr_anaconda:source\x20\x7e/usr/local/bin/anaconda3/bin/activate
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gaa:git\x20add\x20\x2d\x2dall
@@ -9,7 +9,7 @@ SETUVAR _fish_abbr_gcam:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_ggl:git\x20pull\x20origin\x20master
 SETUVAR _fish_abbr_ggp:git\x20push\x20\x2du\x20origin\x20master
 SETUVAR _fish_abbr_gst:git\x20status
-SETUVAR _fish_abbr_open:xdg\x2dopen
+SETUVAR _fish_abbr_o:xdg\x2dopen
 SETUVAR fish_color_autosuggestion:777777
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:000000
