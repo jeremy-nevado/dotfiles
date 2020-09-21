@@ -6,11 +6,13 @@ sede () {
     sed -E "$1"
 }
 
-xmodmap ~/.Xmodmap
-xcape -e 'Control_L=Escape'
+# Linux remapping Caps Lock to Escape/Control
+# xmodmap ~/.Xmodmap
+# xcape -e 'Control_L=Escape'
 
+# Linux ~/anaconda3/bin/activate
 anaconda () {
-    source ~/anaconda3/bin/activate
+    source /usr/local/anaconda3/bin/activate
 }
 
 # xmodmap -e 'Control_L = Escape'
