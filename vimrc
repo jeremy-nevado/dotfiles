@@ -33,8 +33,8 @@ set wildmenu
 set showcmd
 set nomodeline
 set modelines=0
-" smart case-sensitive search
 
+" smart case-sensitive search
 set ignorecase
 set smartcase
 
