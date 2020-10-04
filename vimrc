@@ -79,9 +79,6 @@ nnoremap <Leader>r :ALELint
 nnoremap <Leader>i :ALEInfo<CR>
 nnoremap <Leader>m :ALEToggle
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd  = 'CtrlP'
-
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 " Add spaces after comment delimiters by default
@@ -103,3 +100,19 @@ nnoremap <leader>c :VimtexCompile
 
 " Loading rainbow brackets
 let g:rainbow_active = 1
+
+"fzf 
+
+" If installed using git
+set rtp+=~/.fzf"
+" Bind '//' to a fzf-powered buffer search
+nmap // :BLines!<CR>
+
+" Bind '??' to a fzf-powered project search
+nmap ?? :Rg!<CR>
+
+" Bind "<c-p>" to a fzf-powered filename search
+nmap <c-p> :Files!<CR>
+
+" Bind "cc" to a fzf-powered command search
+nmap cc :Commands!<CR>
