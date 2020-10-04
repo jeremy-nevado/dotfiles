@@ -1,5 +1,7 @@
 execute pathogen#infect()
 set nocompatible
+"256 Colors
+set t_Co=256
 "Smart indentation based on file type
 filetype indent plugin on
 "Sytanx highlighting
