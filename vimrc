@@ -103,8 +103,9 @@ let g:rainbow_active = 1
 
 "fzf 
 
-" If installed using git
-set rtp+=~/.fzf"
+" If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
+
 " Bind '//' to a fzf-powered buffer search
 nmap // :BLines!<CR>
 

@@ -26,45 +26,39 @@ font:
   debug:
     persistent_logging: false
 
-# Base16 Chalk 256 - alacritty color config
-# Chris Kempson (http://chriskempson.com)
+
+# Ethan Schoonover (modified by aramisgithub)
 colors:
   # Default colors
   primary:
-    background: '0x151515'
-    foreground: '0xd0d0d0'
+    background: '0xfdf6e3'
+    foreground: '0x586e75'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x151515'
-    cursor: '0xd0d0d0'
+    text: '0xfdf6e3'
+    cursor: '0x586e75'
 
   # Normal colors
   normal:
-    black:   '0x151515'
-    red:     '0xfb9fb1'
-    green:   '0xacc267'
-    yellow:  '0xddb26f'
-    blue:    '0x6fc2ef'
-    magenta: '0xe1a3ee'
-    cyan:    '0x12cfc0'
-    white:   '0xd0d0d0'
+    black:   '0xfdf6e3'
+    red:     '0xdc322f'
+    green:   '0x859900'
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0x6c71c4'
+    cyan:    '0x2aa198'
+    white:   '0x586e75'
 
   # Bright colors
   bright:
-    black:   '0x505050'
-    red:     '0xfb9fb1'
-    green:   '0xacc267'
-    yellow:  '0xddb26f'
-    blue:    '0x6fc2ef'
-    magenta: '0xe1a3ee'
-    cyan:    '0x12cfc0'
-    white:   '0xf5f5f5'
+    black:   '0x839496'
+    red:     '0xcb4b16'
+    green:   '0xeee8d5'
+    yellow:  '0x93a1a1'
+    blue:    '0x657b83'
+    magenta: '0x073642'
+    cyan:    '0xd33682'
+    white:   '0x002b36'
 
-  indexed_colors:
-    - { index: 16, color: '0xeda987' }
-    - { index: 17, color: '0xdeaf8f' }
-    - { index: 18, color: '0x202020' }
-    - { index: 19, color: '0x303030' }
-    - { index: 20, color: '0xb0b0b0' }
-    - { index: 21, color: '0xe0e0e0' }
+draw_bold_text_with_bright_colors: false
