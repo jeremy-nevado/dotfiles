@@ -5,39 +5,6 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "vim/pack/vendor/start/vim/pack/vendor/start"]
-	path = vim/pack/vendor/start/vim/pack/vendor/start
-	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "vim/pack/vendor/start/vim-easymotion"]
-	path = vim/pack/vendor/start/vim-easymotion
-	url = https://github.com/easymotion/vim-easymotion.git
-[submodule "vim/pack/vendor/start/nerdtree"]
-	path = vim/pack/vendor/start/nerdtree
-	url = https://github.com/preservim/nerdtree.git
-[submodule "vim/pack/vendor/start/auto-pairs"]
-	path = vim/pack/vendor/start/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "vim/pack/vendor/start/fzf"]
-	path = vim/pack/vendor/start/fzf
-	url = https://github.com/junegunn/fzf.git
-[submodule "vim/pack/vendor/start/ctrlp.vim"]
-	path = vim/pack/vendor/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "vim/pack/vendor/start/nerdcommenter"]
-	path = vim/pack/vendor/start/nerdcommenter
-	url = https://github.com/preservim/nerdcommenter.git
-[submodule "vim/pack/vendor/start/vim-prettier"]
-	path = vim/pack/vendor/start/vim-prettier
-	url = https://github.com/prettier/vim-prettier.git
-[submodule "vim/pack/vendor/start/rust.vim"]
-	path = vim/pack/vendor/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "vim/pack/vendor/start/--force"]
-	path = vim/pack/vendor/start/--force
-	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "vim/pack/vendor/start/ale"]
-	path = vim/pack/vendor/start/ale
-	url = https://github.com/dense-analysis/ale.git
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = https://github.com/dense-analysis/ale.git
