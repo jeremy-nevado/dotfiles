@@ -1,7 +1,6 @@
 execute pathogen#infect()
 set nocompatible
 "256 Colors
-set t_Co=256
 "Smart indentation based on file type
 filetype indent plugin on
 "Sytanx highlighting
@@ -13,9 +12,6 @@ syntax on
 " open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
-
-" set color column
-set colorcolumn=80
 
 " quicker window movement
 nnoremap <C-j> <C-w>j
@@ -69,9 +65,6 @@ nnoremap <Down>  :echoe "Use j"<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 
-" easymotion
-map <Space> <Plug>(easymotion-prefix)
-
 " Ale Settings
 let g:ale_exclude_highlights = '/./'
 nmap <silent> <Leader>s <Plug>(ale_next_wrap)
@@ -96,7 +89,7 @@ set listchars=tab:▸\ ,eol:¬
 
 " Setting the tex flavor setting
 let g:tex_flavor = 'latex'
-nnoremap <leader>c :VimtexCompile
+nnoremap <leader><Plug> :VimtexCompile
 
 " Loading rainbow brackets
 let g:rainbow_active = 1
@@ -129,3 +122,6 @@ nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
 nmap <leader>gJ 9999<leader>gJ
 nmap <leader>gK 9999<leader>gK
+
+" Rust formant
+nmap <leader>c :RustFmt<CR>
