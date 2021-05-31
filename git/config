@@ -4,3 +4,5 @@
 
 [github]
     user = jeremy-nevado
+[credential]
+	herlper = cache
