@@ -1,6 +1,6 @@
 execute pathogen#infect()
 set nocompatible
-"256 Colors
+
 "Smart indentation based on file type
 filetype indent plugin on
 "Sytanx highlighting
@@ -129,9 +129,3 @@ nmap <leader>gK 9999<leader>gK
 " Rust formant
 nmap <leader>c :RustFmt<CR>
 
-" Color settings
-" if exists('+termguicolors')
-  " let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-  " let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
-  " set termguicolors
-" endif
