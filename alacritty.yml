@@ -26,6 +26,7 @@ font:
   debug:
     persistent_logging: false
 
+
 # Base16 Ashes - alacritty color config
 # Jannik Siebert (https://github.com/janniks)
 colors:
@@ -61,4 +62,4 @@ colors:
     cyan:    '0xc79595'
     white:   '0xf3f4f5'
 
-draw_bold_text_with_bright_colors: false
+    draw_bold_text_with_bright_colors: false

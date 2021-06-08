@@ -13,6 +13,7 @@
     ~/.alacritty.yml: alacritty.yml
     ~/.config/fish: fish
     ~/.config/git: git
+    ~/.config/nvim/init.vim: init.vim 
     
 
 - create:

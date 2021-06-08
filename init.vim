@@ -1,5 +1,24 @@
-execute pathogen#infect()
+call plug#begin(stdpath('data') . '/plugged')
+Plug 'dense-analysis/ale' "Asynchronous Linter
+Plug 'jiangmiao/auto-pairs' "Automatically pairs various paired characters
+Plug 'junegunn/fzf', {'do': { -> fzf#install() }} "Installs fuzzy-file-finder fzf
+Plug 'junegunn/fzf.vim' "Allows use of fzf in vim
+Plug 'preservim/nerdcommenter' "Toggle commenting
+Plug 'preservim/nerdtree' "GUI file browser
+Plug 'rust-lang/rust.vim' "rustlang integration for vim
+Plug 'tpope/vim-fugitive' "Git integration for vim
+Plug 'prettier/vim-prettier' "prettier integration for vim
+Plug 'mhinz/vim-signify' "Puts signs in the gutter to denote edited files.
+Plug 'chriskempson/base16-vim' "color schemes for vim
+Plug 'MaxMEllon/vim-jsx-pretty' "color schemes for vim
+Plug 'mattn/emmet-vim' "Emmet html abbreviations for vim
+call plug#end()
+
+
 set nocompatible
+
+"Vim Color Scheme from base-16
+colorscheme base16-ashes
 
 "Smart indentation based on file type
 filetype indent plugin on
@@ -38,7 +57,6 @@ set ruler
 set laststatus=2
 set confirm
 set visualbell " turn off bell sound
-set mouse+=a " enable mouse mode (scrolling, selection, etc)
 set cmdheight=2
 set pastetoggle=<f11>    
 " use 4 spaces instead of tabs during formatting
