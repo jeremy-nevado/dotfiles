@@ -21,8 +21,14 @@ Plug 'ncm2/ncm2-bufword' "Current buffer auto-complete
 Plug 'ncm2/ncm2-cssomni' "Css auto-complete
 Plug 'ncm2/ncm2-jedi' "Python auto-complete
 Plug 'ncm2/ncm2-racer' "Rust auto-complete
+Plug 'autozimu/LanguageClient-neovim', {
+            \ 'branch': 'next',
+            \ 'do': 'bash install.sh'
+            \} "Language client for use of RLS
 call plug#end()
 
+"Enable ncm for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
 
 set nocompatible
 
@@ -158,3 +164,8 @@ nmap <leader>c :RustFmt<CR>
 
 "Python3 support
 let g:python3_host_prog='/usr/local/bin/python3'
+
+"Language client settings
+let g:LanguageClient_serverCommands = {
+            \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+            \}

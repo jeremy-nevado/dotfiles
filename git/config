@@ -6,3 +6,5 @@
     user = jeremy-nevado
 [credential]
 	helper = cache
+[core]
+	editor = vim
