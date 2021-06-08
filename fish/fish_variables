@@ -7,8 +7,13 @@ SETUVAR _fish_abbr_ga:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gaa:git\x20add\x20\x2d\x2dall
 SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gcam:git\x20commit\x20\x2dm
-SETUVAR _fish_abbr_ggl:git\x20pull\x20origin\x20master
-SETUVAR _fish_abbr_ggp:git\x20push\x20\x2du\x20origin\x20master
+SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_gd:git\x20diff
+SETUVAR _fish_abbr_gds:git\x20diff\x20\x2d\x2dstaged
+SETUVAR _fish_abbr_gf:git\x20fetch
+SETUVAR _fish_abbr_ggl:git\x20pull\x20origin
+SETUVAR _fish_abbr_ggp:git\x20push\x20\x2du\x20origin
+SETUVAR _fish_abbr_gloga:git\x20log\x20\x2d\x2doneline\x20\x2d\x2ddecorate\x20\x2d\x2dgraph\x20\x2d\x2dall
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_o:xdg\x2dopen
 SETUVAR fish_color_autosuggestion:FFC473

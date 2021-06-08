@@ -1,3 +1,4 @@
+"TODO fix rls integration for linting and racer for autocomplete
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'dense-analysis/ale' "Asynchronous Linter
 Plug 'jiangmiao/auto-pairs' "Automatically pairs various paired characters
@@ -111,6 +112,8 @@ nmap <silent> <Leader>s <Plug>(ale_next_wrap)
 nnoremap <Leader>r :ALELint
 nnoremap <Leader>i :ALEInfo<CR>
 nnoremap <Leader>m :ALEToggle
+let g:ale_linters = {'rust': ['analyzer']}
+
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
@@ -171,9 +174,9 @@ nmap <leader>c :RustFmt<CR>
 
 "Python3 support
 "For Mac it is usr/local/bin for ubuntu it is usr/bin
-let g:python3_host_prog='/usr/bin/python3'
+let g:python3_host_prog='/usr/local/bin/python3.9'
 
 "Language client settings
 let g:LanguageClient_serverCommands = {
-            \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+            \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls', 'analyzer'],
             \}
