@@ -12,6 +12,15 @@ Plug 'mhinz/vim-signify' "Puts signs in the gutter to denote edited files.
 Plug 'chriskempson/base16-vim' "color schemes for vim
 Plug 'MaxMEllon/vim-jsx-pretty' "color schemes for vim
 Plug 'mattn/emmet-vim' "Emmet html abbreviations for vim
+Plug 'airblade/vim-rooter' "Sets to git root with whatever file is being used
+Plug 'ncm2/ncm2' "Autocompletion for nvim
+Plug 'roxma/nvim-yarp' "Dependency for ncm2
+Plug 'ncm2/ncm2-tern', {'do': 'npm install'} "Javascript autocomplete
+Plug 'ncm2/ncm2-path' "Path autocompletion
+Plug 'ncm2/ncm2-bufword' "Current buffer auto-complete
+Plug 'ncm2/ncm2-cssomni' "Css auto-complete
+Plug 'ncm2/ncm2-jedi' "Python auto-complete
+Plug 'ncm2/ncm2-racer' "Rust auto-complete
 call plug#end()
 
 
@@ -147,3 +156,5 @@ nmap <leader>gK 9999<leader>gK
 " Rust formant
 nmap <leader>c :RustFmt<CR>
 
+"Python3 support
+let g:python3_host_prog='/usr/local/bin/python3'
