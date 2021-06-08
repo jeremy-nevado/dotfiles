@@ -27,7 +27,7 @@ font:
     persistent_logging: false
 
 
-# Base16 Ashes - alacritty color config
+# Base16 Ashes 256 - alacritty color config
 # Jannik Siebert (https://github.com/janniks)
 colors:
   # Default colors
@@ -54,12 +54,18 @@ colors:
   # Bright colors
   bright:
     black:   '0x747c84'
-    red:     '0xc7c795'
-    green:   '0x393f45'
-    yellow:  '0x565e65'
-    blue:    '0xadb3ba'
-    magenta: '0xdfe2e5'
-    cyan:    '0xc79595'
+    red:     '0xc7ae95'
+    green:   '0x95c7ae'
+    yellow:  '0xaec795'
+    blue:    '0xae95c7'
+    magenta: '0xc795ae'
+    cyan:    '0x95aec7'
     white:   '0xf3f4f5'
 
-    draw_bold_text_with_bright_colors: false
+  indexed_colors:
+    - { index: 16, color: '0xc7c795' }
+    - { index: 17, color: '0xc79595' }
+    - { index: 18, color: '0x393f45' }
+    - { index: 19, color: '0x565e65' }
+    - { index: 20, color: '0xadb3ba' }
+    - { index: 21, color: '0xdfe2e5' }

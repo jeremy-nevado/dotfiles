@@ -19,21 +19,28 @@ Plug 'ncm2/ncm2-tern', {'do': 'npm install'} "Javascript autocomplete
 Plug 'ncm2/ncm2-path' "Path autocompletion
 Plug 'ncm2/ncm2-bufword' "Current buffer auto-complete
 Plug 'ncm2/ncm2-cssomni' "Css auto-complete
-Plug 'ncm2/ncm2-jedi' "Python auto-complete
-Plug 'ncm2/ncm2-racer' "Rust auto-complete
 Plug 'autozimu/LanguageClient-neovim', {
             \ 'branch': 'next',
             \ 'do': 'bash install.sh'
             \} "Language client for use of RLS
 call plug#end()
 
-"Enable ncm for all buffers
+set nocompatible
+
+"ncm2 settings
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
-set nocompatible
+"Ncm2PopOpen for more information
+set completeopt=noinsert,menuone,noselect
+
+"Use <Tab> to select the popup menu
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "Vim Color Scheme from base-16
 colorscheme base16-ashes
+let base16colorspace=256 "Access colors present in 256 colorspace
+set termguicolors
 
 "Smart indentation based on file type
 filetype indent plugin on
@@ -163,7 +170,8 @@ nmap <leader>gK 9999<leader>gK
 nmap <leader>c :RustFmt<CR>
 
 "Python3 support
-let g:python3_host_prog='/usr/local/bin/python3'
+"For Mac it is usr/local/bin for ubuntu it is usr/bin
+let g:python3_host_prog='/usr/bin/python3'
 
 "Language client settings
 let g:LanguageClient_serverCommands = {
