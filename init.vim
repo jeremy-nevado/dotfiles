@@ -7,41 +7,19 @@ Plug 'junegunn/fzf.vim' "Allows use of fzf in vim
 Plug 'preservim/nerdcommenter' "Toggle commenting
 Plug 'preservim/nerdtree' "GUI file browser
 Plug 'rust-lang/rust.vim' "rustlang integration for vim
-Plug 'tpope/vim-fugitive' "Git integration for vim
 Plug 'prettier/vim-prettier' "prettier integration for vim
-Plug 'mhinz/vim-signify' "Puts signs in the gutter to denote edited files.
 Plug 'chriskempson/base16-vim' "color schemes for vim
 Plug 'MaxMEllon/vim-jsx-pretty' "color schemes for vim
-Plug 'mattn/emmet-vim' "Emmet html abbreviations for vim
 Plug 'airblade/vim-rooter' "Sets to git root with whatever file is being used
 Plug 'ncm2/ncm2' "Autocompletion for nvim
 Plug 'roxma/nvim-yarp' "Dependency for ncm2
-Plug 'ncm2/ncm2-tern', {'do': 'npm install'} "Javascript autocomplete
 Plug 'ncm2/ncm2-path' "Path autocompletion
 Plug 'ncm2/ncm2-bufword' "Current buffer auto-complete
 Plug 'ncm2/ncm2-cssomni' "Css auto-complete
-Plug 'autozimu/LanguageClient-neovim', {
-            \ 'branch': 'next',
-            \ 'do': 'bash install.sh'
-            \} "Language client for use of RLS
 call plug#end()
 
 set nocompatible
 
-"ncm2 settings
-autocmd BufEnter * call ncm2#enable_for_buffer()
-
-"Ncm2PopOpen for more information
-set completeopt=noinsert,menuone,noselect
-
-"Use <Tab> to select the popup menu
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-"Vim Color Scheme from base-16
-colorscheme base16-ashes
-let base16colorspace=256 "Access colors present in 256 colorspace
-set termguicolors
 
 "Smart indentation based on file type
 filetype indent plugin on
@@ -102,6 +80,21 @@ nnoremap <Down>  :echoe "Use j"<CR>
 " Plugin configuration
 "---------------------
 
+"ncm2 settings
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+"Ncm2PopOpen for more information
+set completeopt=noinsert,menuone,noselect
+
+"Use <Tab> to select the popup menu
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+"Vim Color Scheme from base-16
+colorscheme base16-ashes
+let base16colorspace=256 "Access colors present in 256 colorspace
+set termguicolors
+
 " nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
@@ -112,7 +105,13 @@ nmap <silent> <Leader>s <Plug>(ale_next_wrap)
 nnoremap <Leader>r :ALELint
 nnoremap <Leader>i :ALEInfo<CR>
 nnoremap <Leader>m :ALEToggle
-let g:ale_linters = {'rust': ['analyzer']}
+let g:ale_linters = {'rust': ['cargo']}
+let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_fixers =  {'javascript': ['prettier']}
+let g:ale_fix_on_save = 1
+
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
 
 
 " Enable trimming of trailing whitespace when uncommenting
@@ -130,13 +129,6 @@ map <Leader><space> :let @/=''<cr>
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
 
-" Setting the tex flavor setting
-let g:tex_flavor = 'latex'
-nnoremap <leader><Plug> :VimtexCompile
-
-" Loading rainbow brackets
-let g:rainbow_active = 1
-
 "fzf 
 
 " If installed using Homebrew
@@ -146,7 +138,7 @@ set rtp+=/usr/local/opt/fzf
 " set rtp+=~/.fzf
 
 " Bind '//' to a fzf-powered buffer search
-nmap // :BLines!<CR>
+nmap // :Buffers<CR>
 
 " Bind '??' to a fzf-powered project search
 nmap ?? :Rg!<CR>
@@ -157,26 +149,10 @@ nmap <c-p> :Files!<CR>
 " Bind "cc" to a fzf-powered command search
 nmap cc :Commands!<CR>
 
-" SIGNIFY
-
-" Remove numbers
-let g:signify_sign_show_count = 0
-let g:signify_sign_show_text = 1
-
-" Jump through hunks
-nmap <leader>gj <plug>(signify-next-hunk)
-nmap <leader>gk <plug>(signify-prev-hunk)
-nmap <leader>gJ 9999<leader>gJ
-nmap <leader>gK 9999<leader>gK
-
 " Rust formant
 nmap <leader>c :RustFmt<CR>
 
 "Python3 support
 "For Mac it is usr/local/bin for ubuntu it is usr/bin
-let g:python3_host_prog='/usr/local/bin/python3.9'
+let g:python3_host_prog='/usr/bin/python3'
 
-"Language client settings
-let g:LanguageClient_serverCommands = {
-            \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls', 'analyzer'],
-            \}
