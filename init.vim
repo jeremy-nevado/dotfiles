@@ -16,6 +16,10 @@ Plug 'roxma/nvim-yarp' "Dependency for ncm2
 Plug 'ncm2/ncm2-path' "Path autocompletion
 Plug 'ncm2/ncm2-bufword' "Current buffer auto-complete
 Plug 'ncm2/ncm2-cssomni' "Css auto-complete
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'base install.sh',
+    \ }
 call plug#end()
 
 set nocompatible
@@ -105,13 +109,11 @@ nmap <silent> <Leader>s <Plug>(ale_next_wrap)
 nnoremap <Leader>r :ALELint
 nnoremap <Leader>i :ALEInfo<CR>
 nnoremap <Leader>m :ALEToggle
-let g:ale_linters = {'rust': ['cargo']}
+let g:ale_linters = {'rust': ['analyzer']}
 let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_fixers =  {'javascript': ['prettier']}
+let g:ale_fixers =  {'rust': ['rustfmt']}
 let g:ale_fix_on_save = 1
-
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
 
 
 " Enable trimming of trailing whitespace when uncommenting
@@ -156,3 +158,7 @@ nmap <leader>c :RustFmt<CR>
 "For Mac it is usr/local/bin for ubuntu it is usr/bin
 let g:python3_host_prog='/usr/local/bin/python3'
 
+" Language Client Setup
+let g:LanguageClient_serverCommands = {
+\ 'rust': ['rust-analyzer'],
+\}
