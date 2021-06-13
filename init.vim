@@ -154,5 +154,5 @@ nmap <leader>c :RustFmt<CR>
 
 "Python3 support
 "For Mac it is usr/local/bin for ubuntu it is usr/bin
-let g:python3_host_prog='/usr/bin/python3'
+let g:python3_host_prog='/usr/local/bin/python3'
 
