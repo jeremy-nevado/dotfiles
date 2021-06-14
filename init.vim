@@ -1,7 +1,7 @@
 "TODO fix rls integration for linting and racer for autocomplete
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'dense-analysis/ale' "Asynchronous Linter
-Plug 'jiangmiao/auto-pairs' "Automatically pairs various paired characters
+"Plug 'jiangmiao/auto-pairs' "Automatically pairs various paired characters
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }} "Installs fuzzy-file-finder fzf
 Plug 'junegunn/fzf.vim' "Allows use of fzf in vim
 Plug 'preservim/nerdcommenter' "Toggle commenting
