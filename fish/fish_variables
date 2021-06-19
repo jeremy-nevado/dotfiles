@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR TERM:screen\x2d256color
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_anaconda:source\x20/usr/local/anaconda3/bin/activate
 SETUVAR _fish_abbr_g:git

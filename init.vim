@@ -24,6 +24,8 @@ call plug#end()
 
 set nocompatible
 
+set mouse=a
+
 
 "Smart indentation based on file type
 filetype indent plugin on

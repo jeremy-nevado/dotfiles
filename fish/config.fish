@@ -23,3 +23,5 @@ abbr -a gd 'git diff'
 abbr -a gds 'git diff --staged'
 abbr -a gf 'git fetch'
 abbr -a gloga 'git log --oneline --decorate --graph --all'
+
+zoxide init fish | source
